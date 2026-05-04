@@ -1,0 +1,49 @@
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  /* tipografia segura */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+  max-width: 900px;
+  border: 1px solid crimson;
+  margin: auto;
+}
+
+.texto-rojo{
+  color: crimson;
+}
+
+.fondo-base {
+  background-color: blue;
+  width: auto;
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.fondo-color{
+  background-color: darkslateblue;
+}
+
+.fondo-degradado{
+  background-image: linear-gradient(darkorange, darkgreen);
+}
+.fondo-degradado-2{
+  background-image: linear-gradient( darkslateblue, darkred,darkorange );
+}
+
+.fondo-degradado-3{
+  background-image: linear-gradient(to left, darkslateblue, darkred,darkorange );
+}
+
+.fondo-degradado-4{
+  background-image: linear-gradient(to left bottom, darkslateblue, darkred,darkorange );
+}
