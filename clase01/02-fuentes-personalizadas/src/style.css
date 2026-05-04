@@ -1,3 +1,42 @@
+/* siempre incorporar una tipografia al principio del archivo css */
+/* por cada version de la tipografia necesito un font-face */
+/* normal | no negrita */
+@font-face{
+  font-family: 'Medieval Sharp';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+    local('Medieval Sharp Book'),
+    url('/public/fonts/MedievalSharp-Book.woff') format('woff');
+}
+/* cursiva | no negrita */
+@font-face{
+  font-family: 'Medieval Sharp';
+  font-style: italic;
+  font-weight: 300;
+  src: 
+    local('Medieval Sharp Book Oblique'),
+    url('/public/fonts/MedievalSharp-BookOblique.woff') format('woff');
+}
+/* normal | negrita */
+@font-face{
+  font-family: 'Medieval Sharp';
+  font-style: normal;
+  font-weight: 700;
+  src: 
+    local('Medieval Sharp Bold'),
+    url('/public/fonts/MedievalSharp-Bold.woff') format('woff');
+}
+/* cursiva | negrita */
+@font-face{
+  font-family: 'Medieval Sharp';
+  font-style: italic;
+  font-weight: 300;
+  src: 
+    local('Medieval Sharp Bold Oblique'),
+    url('/public/fonts/MedievalSharp-BoldOblique.woff') format('woff');
+}
+
 /* Reset */
 *{
   padding: 0;
@@ -21,3 +60,10 @@ body {
 /* 3. WOFF (Web Open Font Format) */
 /* 4. WOFF2 (el rey actual) */
 /* 5. EOT (Embedded OpenType) */
+
+/* Como use la tipografia */
+h1{
+  font-family: 'Medieval Sharp', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
