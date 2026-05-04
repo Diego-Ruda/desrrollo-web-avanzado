@@ -1,0 +1,23 @@
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  /* tipografia segura */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+  max-width: 900px;
+  border: 1px solid crimson;
+  margin: auto;
+}
+/* 1. TTF (TrueType Font) */
+/* 2. OTF (OpenType Font) */
+/* 3. WOFF (Web Open Font Format) */
+/* 4. WOFF2 (el rey actual) */
+/* 5. EOT (Embedded OpenType) */
