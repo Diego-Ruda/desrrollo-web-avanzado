@@ -47,3 +47,25 @@ body {
 .fondo-degradado-4{
   background-image: linear-gradient(to left bottom, darkslateblue, darkred,darkorange );
 }
+
+.fondo-degradado-5{
+  background-image: linear-gradient(135deg,crimson, pink);
+}
+
+.fondo-degradado-6{
+  background: crimson; /*fallback*/
+  background-image: linear-gradient(135deg,crimson, pink);
+}
+
+.fondo-degradado-7{
+  background: crimson; /*fallback*/
+  background-image: linear-gradient(202deg,crimson 30%, pink 30%);
+}
+.fondo-imagen-1{
+  background-image:
+    linear-gradient(rgba(255, 140, 0, 0.3), rgba(0, 0, 0, 1)),
+    url(https://images.unsplash.com/photo-1771143527938-a0ed2f30f326?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center center;
+}
+
+
