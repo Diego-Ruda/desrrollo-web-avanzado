@@ -11,20 +11,95 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #333;
   height: 1500px;
-  color: white;
 }
 
 .contenedor {
-  max-width: 1100px;
+  max-width: 900px;
   border: 1px solid crimson;
   margin: auto;
 }
 
-.titulo-articulo{
-  background-color: purple;
-  position: sticky; /*inicialmente sticky se comporta como un position relative*/
-  /* Cuando llegue a un limite que yo le impongo */
+.caja-padre{
+  width: 600px;
+  height: 600px;
+  margin: 40px auto;
+  border: 5px solid gold;
 
-  top: 0;/*Cuando llego a 0 el realtive se transforma en fixed (sticky-pega)*/
+  position: relative;
 }
 
+.caja{
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  text-align: center; /*centra horizontalmente*/
+  color: white;
+  font-weight: bold;
+  line-height: 100px; /*centra verticalmente el texto*/
+}
+
+.static {
+  position: static;
+  background-color: darkblue;
+  top: 10px;
+  bottom: 50px;
+  right: 40px;
+  left: 100px;
+}
+
+.relative{
+  position: relative;
+  left: 0;
+  /* top: 100px; */
+  bottom: 0;
+  background-color: darkorange;
+}
+/* El div con la clase .absolute salio del flujo. Es como si nunca lo hubiera definido dentro del html */
+/* Ese elemento que está absolute si previamente ningun contenedor tiene definido un position de static. El div.absolute se a posición con respecto al viewport (a la ventana del navegador) */
+/* Que si el contenedor esta posicionada de alguna manera */
+.absolute {
+  position: static;
+  right: -50px;
+  top: -50px;
+  /* border-radius: 50%; */
+  background-color: darkgreen;
+}
+/* El div con la clase fixed salio del flujo es como si nunca lo hubiera definido dentro del html */
+/* A diferencia e absolute fixed nose fija en la poscion del padre la descarte y se posiciona con respectoa los bordes del navegador  */
+.fixed{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  background-color: darkgoldenrod;
+}
+
+
+.relative-1{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: darkred;
+}
+.relative-2{
+  position: relative;
+  top: -50px;
+  left: 0;
+  z-index: 10;
+  background-color: darkblue;
+}
+.relative-3{
+  position: relative;
+  top: -100px;
+  left: 0;
+  z-index: 15;
+  background-color: darkgreen;
+}
+.relative-4{
+  position: relative;
+  top: -150px;
+  left: 0;
+  z-index: 20;
+  background-color: darkorange;
+}
