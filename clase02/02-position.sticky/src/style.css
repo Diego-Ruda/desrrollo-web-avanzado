@@ -1,20 +1,30 @@
 /* Reset */
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #eee;
-  /* tipografia segura */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #333;
-  height: 1500px;
+    background-color: #eee;
+    /* Tipografía segura -> Todos los SO van a tener alguna de estás tipografías */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+    color: white;
+
+    height: 1500px;
 }
 
 .contenedor {
-  max-width: 900px;
-  border: 1px solid crimson;
-  margin: auto;
+    max-width: 1100px;
+    border: 1px solid crimson;
+    margin: auto;
+}
+
+.titulo-articulo {
+    background-color: purple;
+    position: sticky; /* inicialmente sticky se comporta como un position relative */
+    /* Cuando llegue a un límite que yo le impongo */
+
+    top: 0; /* Cuando llega a 0, el relative se transforma en fixed (sticky-pega) */
 }
