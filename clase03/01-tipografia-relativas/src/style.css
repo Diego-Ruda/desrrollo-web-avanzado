@@ -60,14 +60,41 @@ p.parrafo {
 
 /* Viewport (rem). Es el elemento delc ual se van a fijar el resto para tomar un tamaño   */
 
-.papa{
-  background-color: darkred;
-  height: 20px;
-  color: white;
-  width: 100vw;
+.papa {
+    background-color: darkred;
+    height: 20px;
+    color: white;
+    width: 100vw;
 }
 
-.hijo{
-  background-color: darkblue;
-  width: 25vw;
+.hijo {
+    background-color: darkblue;
+    width: 25vw;
+}
+
+.papa-porcentaje {
+  background-color: darkorange;
+  width: 500px;
+  height: 300px;
+}
+
+.hijo-porcentaje{
+  background-color: darkmagenta;
+  width: 50%;   
+  height: 20%;
+}
+
+.padre-porcen-vs-view {
+  width: 500px;
+  background-color: blueviolet;
+  height: 200px;
+}
+.hijo-porcen{
+  width: 50%;
+  background-color: lightblue;
+}
+
+.hijo-viewport {
+  width: 50vw;
+  background-color: lightcoral;
 }
