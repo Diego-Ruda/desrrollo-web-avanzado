@@ -22,7 +22,7 @@
       <!-- .grupo>h2{:first-of-type | :last-of-type}+.elemento>div+p+span+p+div+span+p -->
       <div class="grupo">
         <h2>:first-of-type | :last-of-type</h2>
-        <div class="elemento">
+        <div class="elementos">
           <div>Hola soy un div</div>
           <p>Hola soy un parrafo</p>
           <span>Hola soy un span</span>
@@ -32,9 +32,42 @@
           <p>Hola soy el ultimo parrafo</p>
         </div>
       </div>
-    </div>
-
     
+
+
+      <!-- .grupo>h2{:nth-child() | :nth-last-child()}+ul.lista>li*8{Soy la opción #8} -->
+      <div class="grupo">
+        <h2>:nth-child() | :nth-last-child()</h2>
+        <ul class="lista">
+          <li>Soy la opcion #1</li>
+          <li>Soy la opcion #2</li>
+          <li>Soy la opcion #3</li>
+          <li>Soy la opcion #4</li>
+          <li>Soy la opcion #5</li>
+          <li>Soy la opcion #6</li>
+          <li>Soy la opcion #7</li>
+          <li>Soy la opcion #8</li>
+        </ul>
+      </div>
+
+
+      <!-- .grupo>h2{nth-of-type() | :nth-last-of-type()}+.lista2>div+p+p+span+p+div -->
+      <div class="grupo">
+        <h2>:nth-of-type() | :nth-last-of-type()</h2>
+        <div class="lista2">
+          <span>Soy un span</span>
+          <div>Soy un div</div>
+          <span>Soy un span</span>
+          <p>Soy un parrafo</p>
+          <p>Soy otro parrafo</p>
+          <span>Soy un span</span>
+          <p>Soy un tercer parrafo</p>
+          <span>Soy un span</span>
+          <div>Soy otro div más</div>
+        </div>
+      </div>
+
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

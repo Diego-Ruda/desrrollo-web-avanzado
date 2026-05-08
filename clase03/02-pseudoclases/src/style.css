@@ -48,3 +48,50 @@ body{
 .parrafos p:last-child{
   color: blueviolet;
 }
+
+/*! :first-of-type | :last-of-type */
+/* quiero de dentro de elementoel primer p que aparece */
+.elementos p:first-of-type{
+  background-color: orange;
+}
+
+.elementos div:first-of-type{
+  background-color: darkolivegreen;
+}
+
+.elementos span:last-of-type{
+  background-color: crimson ;
+}
+
+.elementos div:last-of-type{
+  background-color: blue;
+}
+
+/*! :nth-child() | :nth-last-child() */
+
+.lista li:nth-child(3){
+  color: pink;
+  background-color: black;
+}
+
+.lista li:nth-child(7){
+  color: yellow;
+  background-color: black;
+}
+
+/* 2n -> todos los pares cada 2 (even) */
+/* 2n+1 -> todos los impares  (odd) */
+.lista li:nth-child(even){
+  color: orange;
+  background-color: black;
+}
+
+.lista2 span:nth-of-type(2) {
+  color: darkkhaki;
+  background-color: grey;
+}
+
+.lista2 p:nth-last-of-type(2){
+  color: darkgoldenrod;
+  background-color: black;
+}
