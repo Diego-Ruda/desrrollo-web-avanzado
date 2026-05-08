@@ -8,6 +8,32 @@
   <body>
     <h1>Pseudoclases</h1>
 
+    <div class="contenedor">
+      <!-- .grupo>h2{Primer y segundo elemento}+.parrafos>p*3>lorem5 -->
+      <div class="grupo">
+        <h2>Primer y segundo elemento</h2>
+        <div class="parrafos">
+          <p>Soy el primer parrafo</p>
+          <p>Soy el segundo parrafo</p>
+          <p>Y soy el ultimo parrafo</p>
+        </div>
+      </div>
+
+      <!-- .grupo>h2{:first-of-type | :last-of-type}+.elemento>div+p+span+p+div+span+p -->
+      <div class="grupo">
+        <h2>:first-of-type | :last-of-type</h2>
+        <div class="elemento">
+          <div>Hola soy un div</div>
+          <p>Hola soy un parrafo</p>
+          <span>Hola soy un span</span>
+          <p>Hola soy el segundo parrafo</p>
+          <div>Hola soy otro div</div>
+          <span>Hola soy otro span</span>
+          <p>Hola soy el ultimo parrafo</p>
+        </div>
+      </div>
+    </div>
+
     
     <script type="module" src="/src/main.js"></script>
   </body>

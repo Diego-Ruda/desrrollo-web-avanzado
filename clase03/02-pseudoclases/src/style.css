@@ -9,6 +9,42 @@
 }
 
 
+:root{ /*Es mas especifico que el html*/
+  --mi-color-de-fondo: #ddd;
+  --valor-cero:o;
+  --color-de-titulos:crimson;
+  --color-de-links: blueviolet;
+}
+
+html{
+  font-size: 100%;
+}
+
 body{
   font-family: "Roboto", sans-serif;
+  background-color: var(--mi-color-de-fondo, red);
+}
+
+.contenedor{
+  /*las variables pueden estar tambien en cualquier regla CSS*/
+  --mi-color-de-fondo: #bbb;
+  background-color: var(--mi-color-de-fondo);
+  width: 70vw;
+  margin: auto;
+  padding: 2rem; /*32px*/
+}
+
+
+.grupo{
+  background-color: lightpink;
+  margin: 1.25rem;
+}
+
+/* selecionar el primero de los parrafos dentro del div */
+.parrafos p:first-child{
+  color: crimson;
+}
+/* selecionar el ultimo de los parrafos dentro del div */
+.parrafos p:last-child{
+  color: blueviolet;
 }
