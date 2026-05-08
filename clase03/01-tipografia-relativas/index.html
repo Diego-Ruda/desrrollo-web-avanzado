@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tipografia-relativas</title>
+  </head>
+  <body>
+    <h1>Tipografias (medidas relativas)</h1>
+
+    
+    <h2>Tipos de medidas (unidades de medida)</h2>
+
+    <ul>
+      <li>
+        <h3>Unidades Absolutas</h3>
+        <p>Son aquellas cuyo valor es independente al medio en el que se reproduce, es decir, que siempre miden lo mismo. Se utilizan normalmente para establecer limites a los tamaños de caja y de esta evitar tamaños demasiado grandes o chicos.</p>
+
+        <ul>
+          <li>
+            <h4>Distancias</h4>
+            <ul>
+              <li>100 mm</li>
+              <li>10 cm</li>
+              <li>2 in</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Tipografias</h4>
+            <ul>
+              <li>1 pc (1/6in)</li>
+              <li>1 pt (1/72in)</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Hidridas</h4>
+            <ul>
+              <li>1 px (1/96in)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Unidades Relativas</h3>
+        <p>Son aquellas que dependen de otro elemento para establecer su tamaño y por lo tanto, no siempre miden lo mismo. Se utilizan principalemnte para definir los tamaño de caja, asi como tambien el tamaño  de las tipografias utilizadas</p>
+        <ul>
+          <li>
+            <h4>Tamaño</h4>
+            <ul>
+              <li>* Porcentaje (%) - ancho del contenedor</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Tipografia</h4>
+            <ul>
+              <li>* em (ancho de la M)</li>
+              <li>ex (alto de la x)</li>
+              <li>ch (tamaño del caracter 0)</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Hidridas</h4>
+            <ul>
+              <li>* rem (ancho de la M en el root)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Unidades Flexibles</h3>
+        <p>Son aquellas que basan su tamaño en la diemesion de la ventana (viewport) donde se visualiza la pagina web. Se utitlizan para implementar tipografias adaptables o definir alturas de caja de algunos elementos</p>
+
+        <ul>
+          <li>
+            <h4>Dimensiones</h4>
+            <ul>
+              <li>vmin [viewport min] (lado menor)</li>
+              <li>vmax [viewport max] (lado mayor)</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Disposicion</h4>
+            <ul>
+              <li>vw [viewport width] (ancho del viewport)</li>
+              <li>vh [viewport height] (alto del viewport)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+    <hr>
+
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
