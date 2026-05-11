@@ -21,7 +21,70 @@
       <h2 class="titulo">Mi primer blog</h2>
       <p>Soy un parrafo y tengo un texto</p>
     </section>
+
+    <hr>
+
+    <a href="https://google.com.ar">Google</a>
+    <a href="https://google.com.cl">Google Chile</a>
+    <a href="https://yahoo.com.ar">Yahoo</a>
+    <a href="https://duckduckgo.com">Duck Duck Go</a>
+    <a href="http://localhost:5173">Vite server</a>
+    <a>Soy link href... No es correcto</a>
+
+    <hr>
+
     
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors -->
+
+    <h3>Seleector descendiente directo (hijo directo)</h3>
+
+    <!-- p{Hola soy un texto}>strong{con algo importante} -->
+    <p>Hola soy un texto<strong> con algo importante</strong></p>
+
+
+    <!-- section#importante.seccion-roja>article+article.destacado+articulo+articulo.destacado -->
+    <section id="importante" class="seccion-roja">
+      <article></article>
+      <article class="destacado"></article>
+      <article></article>
+      <article class="destacado"></article>
+    </section>
+
+    <h3>Selector de hermanos adyacentes</h3>
+
+    <!-- div>p+span+h4+span+h5 -->
+    <div>
+      <p>Lorem, ipsum dolor.</p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <h4>Lorem, ipsum.</h4>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repudiandae?</span>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+    </div>
+
+    <h3>selector de hermanos general</h3>
+
+    <div>
+      <p class="parrafito">Lorem ipsum dolor sit amet.</p>
+      <p><span>Lorem, ipsum.</span></p>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, cupiditate.</h4>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <h5>Lorem, ipsum.</h5>
+    </div>
+
+    <hr>
+    <h3>Selector de hijo</h3>
+
+    <!-- div>h6+kp+h1+h2+h6 -->
+    <div>
+      <h6>Hola mundo</h6>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, recusandae?</h1>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <article>
+        <h6>Hola mundo</h6>
+      </article>
+    </div>
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>

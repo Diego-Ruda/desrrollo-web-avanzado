@@ -24,3 +24,100 @@ h2{
   background-color: #ba92e0;
   border: 2px solid #ffc0cb;
 }
+
+/* Selector de atributo [] */
+
+[href] {
+  text-decoration: none;
+}
+
+[href="https://google.com.ar"] {
+  color: darkred;
+}
+
+[class]{
+  background-color: #ffc0cb;
+}
+
+/* Selecionar todos los elementos que comience con el valor del atributo href en https */
+
+[href^="https"] {
+  background-color: olive;
+}
+
+/* Selecionar todos los elementos que termina con el href en 5173 */
+
+[href$="5173"] {
+  color: darksalmon;
+  background-color: black;
+}
+
+/* Selecionar todos los elementos que tengan dentro del href las palabra .com.ar */
+
+[href*=".com.ar"] {
+  color: darkorange;
+}
+
+h3#importante {
+    background-color: black;
+    color: white;
+}
+
+
+/* Permite selecionar todos los elementos que son directamente hijos de otro elemento */
+
+p > strong {
+  color: green;
+}
+
+section#importante.seccion-roja > article {
+  background-color: white;
+  width: 80%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+section#importante.seccion-roja > article.destacado {
+  background-color: lightblue;
+}
+
+
+/* ! Selector de hermanos adyacentes */
+/* Permite selecionar unicamente elementos que siguen del primer elemento */
+
+p + span {
+  font-weight: bolder;
+  color: darkgreen;
+}
+.verde {
+    color: green;
+}
+
+span + h5 {
+    color: palevioletred;
+}
+
+span + h5 {
+    color: palevioletred;
+}
+
+/* ! Selector de hermano general */
+/* Permite selecionar todos los elementsos que siguen después del primero */
+/* alt + 126 -> vigrgulilla ~ */
+
+p.parrafito ~ h5 {
+    color: orange;
+}
+/*  ! Selector de hijo */
+/*  Permite seleccionar a los hijos que esten dentro del padre */
+div h6 {
+  color: darkmagenta;
+}
+
+/* 
+tag    0 0 0 1
+.class 0 0 1 0
+#id    0 1 0 0
+inline 1 0 0 0
+*/
