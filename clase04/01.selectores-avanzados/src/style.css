@@ -1,0 +1,26 @@
+/* selector  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+h2{
+  color: deeppink;
+}
+
+/* Selector de clase (.) */
+
+.borde {
+  border: 2px solid blueviolet;
+}
+
+/* Selector de ID (#) */
+#seccion{
+  background-color: #ba92e0;
+  border: 2px solid #ffc0cb;
+}
