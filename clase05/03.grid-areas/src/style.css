@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  font-size: 100%;
+}
+
+.contenedor {
+  display: grid;
+  background-color: #ffeadd;
+  margin: 1rem;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.elm1{
+  background-color: darkblue;
+  color: white;
+  grid-area: cabecera;
+}
+.elm2{
+  background-color: darkorange;
+  grid-area: principal;
+}
+.elm3{
+  background-color: darkkhaki;
+  grid-area: barra-lateral;
+}
+.elm4{
+  background-color: darkslateblue;
+  color: white;
+  grid-area: pie-pagina;
+}
