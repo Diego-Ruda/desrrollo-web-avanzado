@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #ddd;
+  font-size: 1.25rem;
+}
+
+/* Para aplicar CSS Grid tengo que hacerlo sobre el padre (como flexbox) */
+/* filas -> tracks */
+/* columnas -> tracks */
+.contenedor {
+  display: grid; /* Convierto al contenedor en un contenedor GRID */
+  grid-template-columns: repeat(4, 12.5rem);
+  grid-template-rows: repeat(2, 12.5rem);
+  gap: .5rem;
+
+
+  background-color: mediumseagreen;
+  /* ! manejo horizontal */
+  justify-content: start; /* start (default) | end | center | space-between | apace-around | apace-evenly*/
+  /* ! manejo horizontal de la celda */
+  justify-items: stretch; /*strech (default) | start | end | center */
+
+  /* ! manejo vertical */
+  align-content: start; /* start (default) */ 
+  /* ! manejo vertical de la celda */
+  align-items: stretch; /* start (default) */
+
+  height: 43.75rem;
+}
+
+.elemento {
+  background-color: mediumorchid;
+  width: 5rem;
+  height: 5rem;
+}
+
+
+.elm1 {
+  justify-self: start;
+}
+
+.elm2 {
+  justify-self: end;
+}
+
+.elm3 {
+  justify-self: center;
+}
+
+.elm4 {
+  justify-self: center;
+  align-self: center;
+}
+
+.elm5 {
+  justify-self: end;
+  align-self: end;
+}
+
