@@ -17,6 +17,30 @@ body{
 
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "cabecera cabecera cabecera cabecera"
+                        "principal principal principal barra-lateral"
+                        "principal principal principal barra-lateral"
+                        "principal principal principal barra-lateral"
+                        "principal principal principal barra-lateral"
+                        "pie-pagina pie-pagina pie-pagina pie-pagina";
+
+}
+
+@media (max-width: 37.5rem){ /*600px*/
+  /* media query -> le digo que el contenedor pase de tener 4 columnas a 1 columna */
+  .contenedor{
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabecera"
+                        "principal"
+                        "principal"
+                        "principal"
+                        "principal"
+                        "pie-pagina";
+  }
+
+  .elm3{ /*aside -> barra-lateral*/
+    display: none;
+  }
 }
 
 .elm1{
@@ -37,3 +61,13 @@ body{
   color: white;
   grid-area: pie-pagina;
 }
+
+/* https://css-tricks.com/almanac/properties/g/grid-template-areas/ */
+/* https://cssgrid-generator.netlify.app/ */
+/* https://www.smashingmagazine.com/understanding-css-grid-template-areas/ */
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
+/* https://caniuse.com/?search=grid */
+/* https://www.mozilla.org/en-US/firefox/developer/ */
+/* https://gridbyexample.com/examples/ */
