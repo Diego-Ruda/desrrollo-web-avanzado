@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Sitios responsive (Breakpoints (puntos de quiebre)) */
+/* Extra small None <576px
+  Small sm >= 576px
+  Medium md >= 768px
+  Large 1g >=992px
+  Extra large x1 >>=1200px
+  Extra extra large xx1 >=1400px
+*/
+
+/* REAL */
+
+/* 
+  Small sm >= 576px
+  Medium md >= 768px
+  Large 1g >=992px
+*/
+
+/* ECONOMICO */
+
+/* 
+  Small sm >= 576px
+  Large 1g >=768PX
+*/
