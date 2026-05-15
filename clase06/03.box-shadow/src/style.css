@@ -8,65 +8,49 @@
 html{
   font-size: 100%;
 }
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.box{
-  background-color: purple;
-  width: 12.5rem;
+.box {
+  border: 3px solid #aaa;
+  background-color: #f5f5f5;
+  width: 70%; /* medida realtiva al html */
   height: 12.5rem;
-  margin: .625rem;
-  color: white;
+  margin: 6.25rem auto;
   text-align: center;
-  padding: .625rem;
-  float: left;
+  border-radius: 0.625rem;
+  padding-top: 1.25rem;
 }
-
 
 .box--1{
-  background-color: #921957;
-  border-radius: 20px;
+  background-color: #fcb8ca;
 }
 .box--2{
-  background-color: #037a5a;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-
+  background-color: #3e7d64;
 }
 .box--3{
-  background-color: #ac8190;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 1.25rem;
-  border-bottom-left-radius:.625rem ;
+  background-color: #2a391c;
 }
 .box--4{
-  background-color: #c1d9e5;
-  /*               ar-izq   ar-der ab-der ab-izq        */
-  border-radius: 1.5625rem 3.125rem 1.25rem .625rem;
+  background-color: #19c370;
 }
 .box--5{
-  background-color: #3ce3ac;
-  border-radius: 50%;
+  background-color: #91964d;
 }
 .box--6{
-  background-color: #8b7fab;
-  border-radius: 100px /30px;
+  background-color: #6f194e;
 }
 .box--7{
-  background-color: #8181c6;
-  border-radius: 25px 50px 20px 10px / 50px 25px 30px 100px;
+  background-color: #707b42;
 }
 .box--8{
-  border-radius: 56% 44% 55% 45% / 67% 67% 33% 33% ;
-  background: #22C1C3;
-  background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background-color: #ab15c1;
 }
 .box--9{
-  background-color: #01ff05;
-
+  background-color: #665853;
 }
 .box--10{
-  background-color: #01c7b5;
+  background-color: #510af6;
 }
