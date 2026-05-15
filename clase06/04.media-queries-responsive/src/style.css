@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+
+/* Sitios responsive (Breakpoints (puntos de quiebre)) */
+/* Extra small None <576px
+  Small sm >= 576px
+  Medium md >= 768px
+  Large 1g >=992px
+  Extra large x1 >>=1200px
+  Extra extra large xx1 >=1400px
+*/
+
+/* REAL */
+
+/* 
+  Small sm >= 576px
+  Medium md >= 768px
+  Large 1g >=992px
+*/
+
+/* ECONOMICO */
+
+/* 
+  Small sm >= 576px
+  Large 1g >=768PX
+*/
+
+/* Mobile First */
+/* Es ir del dispositivo mobile a un dispositivo desktop */
+
+/* MI CSS TIENE QUE PENSARSE EN DISPOSITIVO PEQUEÑOS */
+/* ! CELULAR */
+h2{
+  color: darkmagenta;
+  font-size: 70px;
+}
+
+
+@media screen and (min-width: 48rem){
+  /* ! TABLET */
+  h2{
+    color: darkgreen;
+  }
+}
+
+/* ! Desktop */
+@media screen and (min-width: 62rem){
+  h2{
+    color: darkorange;
+    font-size: 40px;
+  }
+}
+
+/* Siempre pensamos en mobile first */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Hoja de estilos para celulares */
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card{
+  background-color: #eaeaea;
+  padding:2rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Tablet o netbook */
+/* Medium md >= 768px */
+@media screen and (min-width: 48rem){
+  .grid{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card{
+    width: 50%;
+    /* background-color: crimson; */
+  }
+}
+
+/* Desktop en adelante */
+/* Large 1g >= 992px */
+@media screen and (min-width: 62rem){
+  /* .grid{
+    justify-content: right;
+  } */
+  .card{
+    width: 25%;
+    /* background-color: orange; */
+  }
+}
