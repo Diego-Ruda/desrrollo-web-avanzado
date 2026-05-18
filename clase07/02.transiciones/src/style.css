@@ -28,38 +28,19 @@ body{
   padding: .5rem;
   border: 4px solid blue;
 
-  transition: 2s all; /*! no usar all*/
-  /* transform: translateX(0); */
+
+  transition-duration: 3s;
+  transition-property: background-color, width;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(.1,-0.85,.95,-0.21);
+  /* transition: 2s background-color */
+              /* 5s width; */
+
 }
 
 .contenedor:hover .elemento{
   background-color: crimson;
-  /* transform: translateX(100px) translateY(100px); */
-  /* transform: translate3d(100px, 100px,100px); */
-
-  /* !Rotate */
-    /* grados [0-360] -> deg */
-    /* radians [0-6.28] -> rad */
-    /* gradians [0-400] -> grad */
-    /* vueltas [0-infinito] (numeros decimales) turn ->  */
-    /* 180deg -> 3.14rad -> 200grad -> .5turn */
-    /* 360deg -> 6.28rad -> 400grad -> 1turn */  
+  width: 20rem;
   
-  /* transform: rotateY(0);   no se percibe en X e Y*/
-  /* transform: translateX(150px) rotateZ(1turn) */
-
-  /* ! SCALE */
-  /* transform: scale(); 2 ejes */
-  /* transform: scaleY(200%); */
-  /* transform: scale(200%,200%); */
-  /* transform: scale3d(200%,200%,200%); */
-
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/perspective */
-
-  /* transform: translate(100px, 100px) rotate(10deg) skew(10deg) scale(120%, 120%); */
-  /* https://cssreference.io/property/transform/ */
-  transform: rotateZ(180deg);
-  transform-origin: bottom right;
-
 }
 
